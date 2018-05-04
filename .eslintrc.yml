@@ -29,16 +29,19 @@ overrides:
       ecmaVersion: 6
     env:
       browser: no
+
   - files:
     - test/**/*.{js,mjs}
     env:
       mocha: yes
     globals:
       expect: no
+
   - files:
     - doc/**/*.js
     env:
       node: no
+
   - files:
     - bin/*
     - lib/**/*.js
@@ -73,9 +76,9 @@ overrides:
         # disallow property access of `global.<timer>.*`
         - selector: '*[object.object.name=global][object.property.name=/(Date|(set|clear)(Timeout|Immediate|Interval))/]:expression'
           message: *GH-237
+
   - files:
     - test/**/*.mjs
     parserOptions:
       ecmaVersion: 6
       sourceType: module
-
