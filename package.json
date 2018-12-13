@@ -467,7 +467,7 @@
     "start": "nps",
     "test": "nps test",
     "precommit": "lint-staged",
-    "version": "nps updateContributors && git add -A ./package.json"
+    "version": "nps version"
   },
   "dependencies": {
     "ansi-colors": "3.2.1",
@@ -528,12 +528,16 @@
     "nyc": "^11.9.0",
     "package-json-versionify": "^1.0.4",
     "prettier-eslint-cli": "^4.7.1",
+    "remark": "^10.0.1",
+    "remark-github": "^7.0.5",
+    "remark-inline-links": "^3.1.2",
     "rewiremock": "^3.12.3",
     "rimraf": "^2.5.2",
     "sinon": "^7.1.1",
     "strip-ansi": "^5.0.0",
     "svgo": "^1.1.1",
     "through2": "^2.0.5",
+    "to-vfile": "^5.0.2",
     "unexpected": "^10.39.2",
     "unexpected-sinon": "^10.10.1",
     "watchify": "^3.7.0"
